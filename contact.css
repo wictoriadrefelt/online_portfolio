@@ -1,29 +1,99 @@
-* {
+*{
     box-sizing: border-box;
-    margin: 0;
 }
+
+:root{
+    --color1: #264653;
+    --color2: #2A9D8F;
+    --color3: #e9c46a;
+    --color4: #f4a261;
+    --color5: #e76f51;
+
+}
+
 
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'bebas';
+    
+    
 }
-
 
 main{
-    min-height: 100vh;
-    min-width: 100%;
-    
-    display: flex;
-    flex-wrap: wrap;
+    height: 100vh;
+    background-color: white;
 
-    font-family: "bebas";
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: white;
+    height: 5em;
+    
+    width: 100%;
+    bottom:0%;
+    color: var(--color2);
+    
     
 }
 
-.home {
+.name-container{
+    
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    
+    
+}
+
+.first{
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    left: 20px;
+    position: relative;
+
+}
+
+h2 {
+    font-weight: bold;
+    align-self: flex-end;
+      
+}
+
+.nav {
+    flex-wrap: wrap;
+    
+    display: flex;
+    width: 85%;
+    margin-bottom: 7px;
+    align-items: flex-end;
+
+}
+
+.contact {
+    
     display: flex;
     width: 300px;
+    
+}
+
+
+.about {
+    display: flex;
+    width: 300px;
+    
+    color: var(--color3)
+}
+
+.nav-item{
+    margin-left: auto;
+
 }
 
 .section{
@@ -43,6 +113,7 @@ main{
     text-align: flex-start;
     margin: 60px;
 }
+
 
 .add-bold {
     font-weight: bold;
@@ -67,17 +138,6 @@ main{
 }
 
 
-.nav-item {
-    padding: 50px;
-    width: 100%;
-    
-    background-color: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start
-    
-}
-
 
 
 .social {
@@ -90,12 +150,37 @@ main{
  }
 
 
+ 
+.color1 {background-color: var(--color1)}
+.color2 {background-color: var(--color2)}
+.color3 {background-color: var(--color3)}
+.color4 {background-color: var(--color4)}
+.color5 {background-color: var(--color5)}
+
+.textColor1 {color: var(--color1)}
+.textColor2 {color: var(--color2)}
+.textColor3 {color: var(--color3)}
+.textColor4 {color: var(--color4)}
+.textColor5 {color: var(--color5)}
+
 
 .item {
     height: 10em;
     width: 10em;
     margin: 15px;
-    background-color: darkolivegreen;
+    justify-content: space-between;
+    
+    
+}
+
+.center {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    
+
 }
 
 
@@ -103,10 +188,10 @@ main{
 #linkedin{
     height: 50px;
     width: 50px;
+    
 }
 
 #email{
-    border: 1px solid black;
     height: 60px;
     width: 60px;
 }
