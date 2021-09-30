@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: #264653;
+    --color2: #2A9D8F;
+    --color3: #e9c46a;
+    --color4: #f4a261;
+    --color5: #e76f51;
+
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'bebas';
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    background-color: white;
+    height: 5em;
+    
+    width: 100%;
+    bottom:0%;
+    color: var(--color2)
+    
+}
+
+.name-container{
+    
+    width: 50%;
+    display: flex;
+    
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.first{
+    display: flex;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    left: 20px;
+    position: relative;
+
+}
+
+h2 {
+    font-weight: bold;
+    align-self: flex-end;
+      
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    align-content: space-around;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+.contact {
+    
+    display: flex;
+    width: 300px;
+    
+}
+
+
+.about {
+    display: flex;
+    width: 300px;
+    
+    color: var(--color3)
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--color3)
+}
+
+li {
+    list-style: none;
+    list-style-position: outside;
+    
+}
+
+main{
+    height: 100vh;
+    background-color: white;
+
+}
+
+.main-info {
+    margin: 50px;
+    padding: 3px;
+    font-size: 40px;
+    
+}
+
+
+.color1 {color: var(--color1)}
+.color2 {color: var(--color2)}
+.color3 {color: var(--color3)}
+.color4 {color: var(--color4)}
+.color5 {color: var(--color5)}
+
+
+.secondary{
+    font-size-adjust: unset;
+    font-size: 20px;
+}
+
+
+
+footer{
+    margin-top: auto;
+    border: none;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.tiny{font-size: 15px;}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('font/BebasNeue-Regular.otf');
+}
